@@ -24,4 +24,4 @@ if __name__ == '__main__':
 
     totalMinuts = horesAminuts + minuts
 
-    print("El total de minuts es: ",totalMinuts)
+    print("El total de minuts ess: ",totalMinuts)
