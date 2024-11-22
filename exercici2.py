@@ -28,18 +28,24 @@ if __name__ == '__main__':
     print("Quants dies anireu de viatge: ",end="")
     quantitatDies = int(input())
 
+    if quantitatDies < 0:
+
+        print("ERROR \n Torna a entrar els dies que anireu de viatge: ", end="")
+        quantitatDies = int(input())
+
     print("Quantes persones anireu: ",end="")
     quantitatPersones = int(input())
 
-    if opcioEscollida == "opcioI":
 
-        preuTotalDies = (opcioI * quantitatDies)
+    if opcioEscollida == "I":
 
-        preuPerPersona = (opcioI * quantitatPersones)
+        preuTotalDies = (430,00 * quantitatDies)
+
+        preuPerPersona = (430,00 * quantitatPersones)
 
         preuFinal = (preuTotalDies + preuPerPersona)
 
-    elif opcioEscollida == "opcioB":
+    elif opcioEscollida == "B":
 
 
         preuTotalDies = (295 * quantitatDies)
@@ -48,8 +54,67 @@ if __name__ == '__main__':
 
         preuFinal = (preuTotalDies + preuPerPersona)
 
+    elif opcioEscollida == "P":
 
-    print(preuFinal)
+
+        preuTotalDies = (125 * quantitatDies)
+
+        preuPerPersona = (125 * quantitatPersones)
+
+        preuFinal = (preuTotalDies + preuPerPersona)
+
+    elif opcioEscollida == "M":
+
+        preuTotalDies = (395 * quantitatDies)
+
+        preuPerPersona = (395 * quantitatPersones)
+
+        preuFinal = (preuTotalDies + preuPerPersona)
+
+
+    else:
+
+        print("Opcio invalida" "\n Torna a entrar la opcio: ",end="")
+        opcioEscollida = str(input())
+
+        if opcioEscollida == "I":
+
+            preuTotalDies = (430, 00 * quantitatDies)
+
+            preuPerPersona = (430, 00 * quantitatPersones)
+
+            preuFinal = (preuTotalDies + preuPerPersona)
+
+        elif opcioEscollida == "B":
+
+            preuTotalDies = (295 * quantitatDies)
+
+            preuPerPersona = (295 * quantitatPersones)
+
+            preuFinal = (preuTotalDies + preuPerPersona)
+
+        elif opcioEscollida == "P":
+
+            preuTotalDies = (125 * quantitatDies)
+
+            preuPerPersona = (125 * quantitatPersones)
+
+            preuFinal = (preuTotalDies + preuPerPersona)
+
+        elif opcioEscollida == "M":
+
+            preuTotalDies = (395 * quantitatDies)
+
+            preuPerPersona = (395 * quantitatPersones)
+
+            preuFinal = (preuTotalDies + preuPerPersona)
+
+
+
+    print("EL PREU FINAL ES: ", preuFinal)
+
+
+
 
 
 
