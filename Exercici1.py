@@ -20,6 +20,8 @@ if __name__ == '__main__':
         minuts = int(input())
 
 
-    horesAminuts = (hores / 60)
+    horesAminuts = hores / 60
 
-    totalMinuts =
+    totalMinuts = horesAminuts + minuts
+
+    print("El total de minuts es: ",totalMinuts)
